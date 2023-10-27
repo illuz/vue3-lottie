@@ -265,7 +265,7 @@ export default defineComponent({
       })
 
       lottieAnimation.addEventListener('enterFrame', () => {
-        emits('onEnterFrame')
+        emits('onEnterFrame', lottieAnimation.currentFrame)
       })
 
       lottieAnimation.addEventListener('segmentStart', () => {
